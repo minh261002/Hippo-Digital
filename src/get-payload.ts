@@ -9,12 +9,12 @@ dotenv.config({
 })
 
 const transporter = nodemailer.createTransport({
-  host: 'sandbox.smtp.mailtrap.io',
-  secure: true,
-  port: 465,
+  host: 'smtp.gmail.com',
+  secure: false,
+  port: 587,
   auth: {
-    username: '0e27a7efee66e0',
-    password: '1e1ad615668f9e',
+    user: 'trcongminh.261002@gmail.com',
+    pass: 'jusa zbei olny pvxn',
   },
 })
 
