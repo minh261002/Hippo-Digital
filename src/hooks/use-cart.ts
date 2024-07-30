@@ -1,5 +1,6 @@
 import { Product } from '@/payload-types'
 import { create } from 'zustand'
+import { toast } from 'sonner'
 import {
   createJSONStorage,
   persist,
