@@ -8,7 +8,7 @@ const nextConfig = {
 			},
 			{
 				protocol: "https",
-				hostname: "https://hippo-digital.onrender.com",
+				hostname: "hippo-digital.onrender.com",
 			},
 		],
 	},
