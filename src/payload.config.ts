@@ -15,7 +15,7 @@ dotenv.config({
 })
 
 export default buildConfig({
-  serverURL: process.env.NEXT_PUBLIC_SERVER_URL || '',
+  serverURL: 'https://hippo-digital.onrender.com',
   collections: [Users, Products, Media, ProductFiles, Orders], 
   routes: {
     admin: '/sell',
