@@ -22,7 +22,19 @@ export const useCart = create<CartState>()(
       items: [],
       addItem: (product) =>
         set((state) => {
-          return { items: [...state.items, { product }] }
+          const existingItem = state.items.find(
+            (item) => item.product.id === product.id
+          )
+
+          if (existingItem) {
+            toast.warning('Item already in cart');
+            return state
+          }
+
+          toast.success('Item added to cart');
+          return {
+            items: [...state.items, { product }],
+          }
         }),
       removeItem: (id) =>
         set((state) => ({
