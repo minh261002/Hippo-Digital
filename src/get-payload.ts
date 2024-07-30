@@ -9,12 +9,12 @@ dotenv.config({
 })
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.resend.com',
+  host: 'sandbox.smtp.mailtrap.io',
   secure: true,
   port: 465,
   auth: {
-    user: 'resend',
-    pass: process.env.RESEND_API_KEY,
+    username: '0e27a7efee66e0',
+    password: '1e1ad615668f9e',
   },
 })
 
